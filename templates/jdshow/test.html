@@ -1,0 +1,23 @@
+<div id="main" style="width:1100px;height:500px;"></div>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('main'));
+    var option = {
+        title:{
+            text:'手机价格显示'
+        },
+        tooltip:{},
+        legend:{
+            data:['价格']
+        },
+        xAxis:{
+            data:{{ name | safe }}
+        },
+        yAxis:{},
+        series:[{
+            name:'价格',
+            type :'bar',
+            data:{{ price |safe }}
+        }]
+    };
+    myChart.setOption(option);
+</script>

@@ -1,0 +1,26 @@
+<table class="table table-bordered">
+<thead>
+
+        <tr class="success">
+            <th>商品id</th>
+            <th>商品链接</th>
+            <th>商品名称</th>
+            <th>商品价格</th>
+            <th>评价数量</th>
+        </tr>
+        </thead>
+<tbody>
+
+
+        {% for item in items %}
+            <tr class="warning">
+                <td>{{ item.product_id }}</td>
+                <td>{{ item.product_url }}</td>
+                <td>{{ item.product_name }}</td>
+                <td>{{ item.product_price }}</td>
+                <td>{{ item.comment_num }}</td>
+            </tr>
+        {% endfor %}
+</tbody>
+</table>
+{% include 'jdshow/paginator.html' %}

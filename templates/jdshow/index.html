@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="{% static 'js/jquery.min.js' %}" type="=appliication/javascript"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}" type="application/javascript"></script>
+    <script src="{% static 'js/echarts.min.js' %}" type="application/javascript"></script>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}" >
+</head>
+<body>
+{% include 'jdshow/navbar.html' %}
+{% include 'jdshow/tables.html' %}
+{% include 'jdshow/test.html' %}
+</body>
+</html>
